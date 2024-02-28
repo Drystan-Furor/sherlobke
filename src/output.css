@@ -840,6 +840,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* Base Styles */
+
+/* Media Query for small screens */
+
 .hover\:border-teal-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
@@ -862,6 +866,12 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:scroll-smooth {
+    scroll-behavior: smooth;
+  }
 }
 
 @media (min-width: 768px) {
@@ -913,3 +923,4 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
