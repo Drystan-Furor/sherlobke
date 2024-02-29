@@ -2,73 +2,54 @@
 <html lang="en" class="sm:scroll-smooth">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SherLobke</title>
     <script src="dist/main.bundle.js" defer></script>
-    <link rel="stylesheet" href="css/style.css" alt="app logo"/>
+    <link rel="stylesheet" href="css/style.css" alt="app logo" />
 
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen text-gray-700 bg-white dark:bg-slate-800 dark:text-white"  style="font-family: 'Source Sans Pro', sans-serif">
+<body class="min-h-screen text-gray-700 bg-white dark:bg-slate-800 dark:text-white"
+    style="font-family: 'Source Sans Pro', sans-serif">
     <!--NAV -->
-    <header class="bg-yellow-700 text-white sticky top-0 z-10" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <header class="bg-yellow-700 text-white sticky top-0 z-10"
+        style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
-                <a href="#intro"
-                >
+                <a href="#intro">
                     <span class="font-bold">SherLobke</span>
                 </a>
             </h1>
             <div>
-                <button
-                        id="hamburger-button"
-                        class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
-                >
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
                     <!--&#9776-->
                     <div
-                            class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
-                    ></div>
+                        class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                    </div>
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#home" class="hover:opacity-90">
                         Home
                     </a>
-                    <a href="#testimonials" class="hover:opacity-90"> Testimonials </a>
-                    <a href="#contact" class="hover:opacity-90"> Contact Us </a>
+                    <a href="#description" class="hover:opacity-90"> Over ons </a>
+                    <a href="#location" class="hover:opacity-90"> Adres</a>
                 </nav>
             </div>
         </section>
-        <section
-                id="mobile-menu"
-                class="absolute top-68 bg-zinc-950 dark:bg-zinc-950 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
-        >
+        <section id="mobile-menu"
+            class="absolute top-68 bg-zinc-950 dark:bg-zinc-950 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
             <!--<button class="text-8xl self-end px-6">-->
             <!-- &times;-->
             <!--</button>-->
-            <nav
-                    class="flex flex-col min-h-screen items-center py-8"
-                    aria-label="mobile"
-            >
-                <a href="#home" class="w-full text-center py-6 hover:opacity-80"
-                >Home</a
-                >
-                <a
-                        href="#testimonials"
-                        class="w-full text-center py-6 hover:opacity-80"
-                >Testimonials</a
-                >
-                <a href="#contact" class="w-full text-center py-6 hover:opacity-80"
-                >Contact</a
-                >
-                <a href="#footer" class="w-full text-center py-6 hover:opacity-80"
-                >Legal</a
-                >
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#home" class="w-full text-center py-6 hover:opacity-80">Home</a>
+                <a href="#description" class="w-full text-center py-6 hover:opacity-80">Over Ons</a>
+                <a href="#location" class="w-full text-center py-6 hover:opacity-80">Adres</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-80">Legal</a>
             </nav>
         </section>
     </header>
@@ -76,31 +57,104 @@
     <!-- LOGO -->
     <div style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
         <section class="max-w-4xl mx-auto flex justify-between items-center">
-            <img
-                    class="sm:w-1/2 mx-auto"
-                    src="img/logo.webp"
-                    alt="sherlobke logo"
-            />
+            <img class="sm:w-1/2 mx-auto" src="img/logo.webp" alt="sherlobke logo" />
         </section>
     </div>
     <!--Hero-->
-    <div class="py-20" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
-        <div class="container mx-auto px-6">
+    <section id="home" class="py-20" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+        <div class="container text-center mx-auto px-6">
             <h2 class="text-4xl font-bold mb-2 text-white">
                 Honden detectie & Speuren!
             </h2>
             <h3 class="text-2xl mb-8 text-gray-200">
                 Ontdek de wereld door de neus van je trouwe viervoeter.
             </h3>
-            <button class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-                Adres
-            </button>
+            <a href="#location">
+                <button class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                    Bezoek ons
+                </button></a>
         </div>
-    </div>
+        <!-- contact -->
+        <div class="container mx-auto px-6 py-20">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+                Contact
+            </h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <h4 class="text-black text-center">Afspraak maken:</h4>
+
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            Telefonisch: <a href="tel:+331624770098">(+31) 6 505 732 74</a><br>
+                            Sms of Whats app voor een snelle reactie.<br>
+                            E-mail: <a href="mailto:info@trimsalonlobke.nl">info@trimsalonlobke.nl</a>
+                        </p>
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Na 18.00 uur goed bereikbaar.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <div class="text-center">
+                            <h4 class="text-black">Openingstijden</h4>
+                            <table class="mx-auto text-gray-800 text-base mb-5">
+                                <tbody>
+                                    <tr>
+                                        <td class="px-6 py-2">MA:</td>
+                                        <td class="px-6 py-2">9:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">DI:</td>
+                                        <td class="px-6 py-2">9:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">WO:</td>
+                                        <td class="px-6 py-2">9:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">DO:</td>
+                                        <td class="px-6 py-2">9:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">VR:</td>
+                                        <td class="px-6 py-2">9:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">ZA:</td>
+                                        <td class="px-6 py-2">Gesloten</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-2">ZO:</td>
+                                        <td class="px-6 py-2">Gesloten</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Afwijkende openingstijden op feestdagen, neem contact op voor meer informatie.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            SherLobke ligt op loopafstand van Leusden-Zuid, ca 5 minuten rijden van Leusden centrum en
+                            Woudenberg centrum en ca 10 minuten van Amersfoort centrum.
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Er is voldoende parkeergelegenheid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Features -->
     <section class="container mx-auto px-6 p-10">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50">
-            Wat bieden wij:
+            Wat biedt SherLobke:
         </h2>
         <div class="flex items-center flex-wrap mb-20">
             <div class="w-full md:w-1/2">
@@ -108,23 +162,30 @@
                     Samenwerken met je hond
                 </h4>
                 <p class="text-gray-600 dark:text-slate-300 mb-8">
-                    Welkom bij SherLobke, het unieke kruispunt waar passie voor honden en de kunst van het speuren samenkomen. Geïnspireerd door de scherpzinnigheid van Sherlock Holmes, bieden wij een verrijkende ervaring voor zowel hond als eigenaar. In onze wereld wordt elke geur een avontuur en elk spoor een mysterie om te ontrafelen. Ons doel? De band tussen jou en je hond versterken door de wonderen van detectie en speurwerk.
+                    Welkom bij SherLobke, het unieke kruispunt waar passie voor honden en de kunst van het speuren
+                    samenkomen. Geïnspireerd door de scherpzinnigheid van Sherlock Holmes, bieden wij een verrijkende
+                    ervaring voor zowel hond als eigenaar. In onze wereld wordt elke geur een avontuur en elk spoor een
+                    mysterie om te ontrafelen. Ons doel? De band tussen jou en je hond versterken door de wonderen van
+                    detectie en speurwerk.
                 </p>
             </div>
             <div class="w-full md:w-1/2">
-                <img src="assets/health.svg" alt="Monitoring" />
+                <img src="img/dogsurvival.jpg" alt="Hero" />
             </div>
         </div>
         <div class="flex items-center flex-wrap mb-20">
             <div class="w-full md:w-1/2">
-                <img src="assets/report.svg" alt="Reporting" />
+                <img src="img/detectie_emy_bassisschool.jpg" alt="Dog Emy on detection in school" />
             </div>
             <div class="w-full md:w-1/2 pl-10">
                 <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
                     Passie en plezier
                 </h4>
                 <p class="text-gray-600 dark:text-slate-300 mb-8">
-                    Bij SherLobke geloven we dat elke hond de potentie heeft om een speurneus te zijn. Of je nu een doorgewinterde detective duo bent of nieuwsgierig naar deze opwindende wereld, onze programma's zijn ontworpen om iedereen welkom te heten. Met een mix van deskundige begeleiding, praktische oefeningen en een snufje plezier, ontsluiten we samen de verborgen talenten van je hond.
+                    Bij SherLobke geloven we dat elke hond de potentie heeft om een speurneus te zijn. Of je nu een
+                    doorgewinterde detective duo bent of nieuwsgierig naar deze opwindende wereld, onze programma's zijn
+                    ontworpen om iedereen welkom te heten. Met een mix van deskundige begeleiding, praktische oefeningen
+                    en een snufje plezier, ontsluiten we samen de verborgen talenten van je hond.
                 </p>
             </div>
         </div>
@@ -134,16 +195,121 @@
                     Avontuur
                 </h4>
                 <p class="text-gray-600 dark:text-slate-300 mb-8">
-                    Ons avontuurlijke pad is bezaaid met olijfgroene mysteries en Sherlock-bruine ontdekkingen, klaar om door jullie samen verkend te worden. Dus, waar wacht je nog op? Trek je speurschoenen aan, leid je hond naar nieuwe hoogtes van begrip en communicatie, en duik samen in de opwindende wereld van hondendetector- en speurwerk.
+                    Ons avontuurlijke pad is bezaaid met olijfgroene mysteries en Sherlock-bruine ontdekkingen, klaar om
+                    door jullie samen verkend te worden. Dus, waar wacht je nog op? Trek je speurschoenen aan, leid je
+                    hond naar nieuwe hoogtes van begrip en communicatie, en duik samen in de opwindende wereld van
+                    hondendetector- en speurwerk.
                 </p>
             </div>
             <div class="w-full md:w-1/2">
-                <img src="assets/sync.svg" alt="Syncing" />
+                <img src="img/hero.jpg" alt="Syncing" />
+            </div>
+        </div>
+    </section>
+    <section id="description" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+        <div class="container mx-auto px-6 text-center py-20">
+            <h2 class="mb-6 text-4xl font-bold text-center text-white">
+                Welkom bij SherLobke - Uw One-Stop Speur & Detectie Shop!
+            </h2>
+            <h3 class="my-4 text-2xl text-white">
+                Duik in de fascinerende wereld van speuren en detectie met SherLobke, dé speciaalzaak waar passie voor
+                avontuur en de liefde voor honden samenkomen.
+            </h3>
+            <button
+                class="bg-white text-black font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
+                Bij ons vind je alles wat je nodig hebt om de detective in
+                je hond naar boven te halen. Van professionele speuruitrustingen tot innovatieve detectiegadgets,
+                SherLobke biedt een zorgvuldig geselecteerd assortiment producten aan, ontworpen om elk speuravontuur te
+                verrijken.
+            </button>
+        </div>
+    </section>
+    <!-- ABOUT  -->
+    <section class="container mx-auto px-6 p-10">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50">
+            Wie is Lobke:
+        </h2>
+        <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+                <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                    Liefde voor dieren
+                </h4>
+                <p class="text-gray-600 dark:text-slate-300 mb-8">
+                    Lobke is een ware pionier op het gebied van hondenspeur- en detectiewerk, wiens pad is geplaveid met
+                    passie, toewijding en een diepe liefde voor dieren. Haar reis begon op het Groenhorst College in
+                    Barneveld, waar ze haar diploma in dierverzorging behaalde, een fundament dat haar toewijding aan
+                    dierwelzijn en haar verlangen om een verschil te maken in de levens van dieren bevestigde. Haar
+                    dorst naar kennis en specialisatie leidde haar naar het Cursuscentrum Dierverzorging, ook in
+                    Barneveld, waar ze met vlag en wimpel slaagde voor de opleiding honden trimmen.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="img/hero_and_dog.jpg" alt="Hero and dog" />
+            </div>
+        </div>
+        <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+                <img src="img/suppen.jpg" alt="suppen" />
+            </div>
+            <div class="w-full md:w-1/2 pl-10">
+                <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                    Expert in hondenspeur- en detectiewerk
+                </h4>
+                <p class="text-gray-600 dark:text-slate-300 mb-8">
+                    Met een solide achtergrond in dierverzorging en een ontembare passie voor honden, heeft Lobke zich
+                    verder ontwikkeld tot een expert in hondenspeur- en detectiewerk. Haar ervaringen hebben haar
+                    geleerd dat elke hond uniek is, met eigen talenten die wachten om ontdekt te worden. Deze
+                    ontdekkingen wekten een diepere passie in Lobke op, een verlangen om niet alleen banden te smeden en
+                    te versterken tussen honden en hun eigenaren, maar ook om anderen te inspireren en uit te rusten om
+                    samen met hun honden aan avonturen te beginnen.
+
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+                <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                    Speciaalzaak
+                </h4>
+                <p class="text-gray-600 dark:text-slate-300 mb-8">
+                    Gedreven door deze passie en met een rijke ervaring op zak, opent Lobke nu SherLobke, een
+                    speciaalzaak die een schat aan producten biedt voor iedereen die geïnteresseerd is in speuren en
+                    detectie met honden. SherLobke is meer dan zomaar een winkel; het is een uitdrukking van Lobke's
+                    levenswerk, een plek waar gelijkgestemde individuen alles kunnen vinden wat ze nodig hebben om de
+                    speurvaardigheden van hun honden te ontwikkelen en te verfijnen.
+
+                </p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="img/detectie_libby_bij_uniblock.jpg" alt="libby on detection" />
+            </div>
+        </div>
+        <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+                <img src="img/swiss_emy_enjoys_view.jpg" alt="Dog enjoys view in Switzerland" />
+            </div>
+            <div class="w-full md:w-1/2 pl-10">
+                <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                    Ontdekkingsreis
+                </h4>
+                <p class="text-gray-600 dark:text-slate-300 mb-8">
+                    SherLobke staat symbool voor avontuur, kennisdeling en gemeenschapszin. Het is een weerspiegeling
+                    van Lobke's
+                    overtuiging dat door samenwerking en wederzijds respect tussen hond en eigenaar, ongekende
+                    mogelijkheden ontdekt
+                    kunnen worden. Met haar winkel nodigt Lobke anderen uit om deel te nemen aan deze ontdekkingsreis,
+                    om samen met hun
+                    viervoetige vrienden de wereld van speur- en detectiewerk te verkennen, en om hun banden te
+                    versterken door gedeelde
+                    ervaringen en avonturen. SherLobke is niet alleen een winkel, maar een toegangspoort tot een wereld
+                    vol
+                    mogelijkheden, geleid door Lobke's expertise, passie en de onvoorwaardelijke liefde voor honden.
+                </p>
             </div>
         </div>
     </section>
     <!-- Testimonials -->
-    <section class="bg-gray-100  dark:bg-slate-800 dark:text-white">
+    <section id="testimonials" class="bg-gray-100  dark:bg-slate-800 dark:text-white">
         <div class="container mx-auto px-6 py-20">
             <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
                 Testimonials
@@ -152,144 +318,101 @@
                 <div class="w-full md:w-1/3 px-2 mb-4">
                     <div class="bg-white rounded shadow py-2">
                         <p class="text-gray-800 text-base px-6 mb-5">
-                            Monitoring and tracking my health vitals anywhere I go and on
-                            any platform I use has never been easier.
+                            Onze ervaring met SherLobke was simpelweg onvergetelijk. Mijn hond, Max, en ik hebben samen
+                            geleerd hoe we een echt team kunnen vormen. Elke sessie was een avontuur op zich!
                         </p>
                         <p class="text-gray-500 text-xs md:text-sm px-6">
-                            John Doe
+                            Jeroen & Max
                         </p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 px-2 mb-4">
                     <div class="bg-white rounded shadow py-2">
                         <p class="text-gray-800 text-base px-6 mb-5">
-                            As an Athlete, this is the perfect product for me. I wear my
-                            Smart Health Monitoring Wristwatch everywhere I go, even in the
-                            bathroom since it's waterproof.
+                            Ik wist niet dat mijn kleine terriër, Daisy, zulke verbazingwekkende speurvaardigheden had
+                            tot we de cursussen bij SherLobke volgden. Dank je, Lobke, voor het openen van deze nieuwe
+                            wereld voor ons!
                         </p>
                         <p class="text-gray-500 text-xs md:text-sm px-6">
-                            Jane Doe
+                            Emma & Daisy
                         </p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 px-2 mb-4">
                     <div class="bg-white rounded shadow py-2">
                         <p class="text-gray-800 text-base px-6 mb-5">
-                            I don't regret buying this wearble gadget. One of the best
-                            gadgets I own!.
-                        </p>
+                            SherLobke heeft ons geholpen een sterke band op te bouwen en elkaar op een heel nieuw niveau
+                            te begrijpen. De technieken en het plezier dat we hebben beleefd tijdens de speurlessen zijn
+                            onbetaalbaar.
                         <p class="text-gray-500 text-xs md:text-sm px-6">
-                            James Doe
+                            Lucas & Bella
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Call to Action-->
-    <section style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <!--LOCATION-->
+    <section id="location" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
         <div class="container mx-auto px-6 text-center py-20">
             <h2 class="mb-6 text-4xl font-bold text-center text-white">
-                Laat geen spoor onontdekt!
+                Bezoek ons vandaag nog!
             </h2>
             <h3 class="my-4 text-2xl text-white">
-                Boek nu je speuravontuur bij SherLobke en begin aan een reis vol mysterie, verbinding en ontdekking.
+                Laat geen spoor onontdekt, en begin bij SherLobke aan een reis vol mysterie, verbinding en ontdekking.
             </h3>
-            <button class="bg-white text-black font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-                Start Vandaag!
-            </button>
+            <iframe class="mx-auto text-center"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.923000491287!2d5.398878377927578!3d52.11752977195855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64453b7f46a81%3A0xbeeca9099af71d74!2sArnhemseweg%2034%2C%203832%20GM%20Leusden!5e0!3m2!1snl!2snl!4v1709187745598!5m2!1snl!2snl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div
+                class="bg-white text-black font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider flex items-center justify-between">
+                <div class="text-center flex-1">
+                    Arnhemseweg 34<br>
+                    3832GM<br>
+                    Leusden
+                </div>
+
+                <button id="copyButton" title="copy address"
+                    class="bg-slate-600 dark:bg-slate-600 text-white px-2 py-1 rounded-lg hover:bg-slate-900 hover:text-white active:bg-yellow-500 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6">
+                        <!-- Example path for a copy icon -->
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                    </svg>
+                    <span class="copy-all__text ml-2">Copy</span>
+                </button>
+            </div>
         </div>
     </section>
     <!--Footer-->
-
-<footer id="footer" class="bg-zinc-950 text-white text-sm">
-    <section
-            class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
-    >
-        <address>
-            <h2>Tristan Arts</h2>
-            Email: <a href="mailto:artstristan@gmail.com">ArtsTristan@gmail.com</a
-        ><br/>
-            Phone: <a href="tel:+331624770098">(+31) 6 24770098</a>
-        </address>
-        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
-            <a href="#intro" class="hover:opacity-80">Home</a>
-            <a href="#generators" class="hover:opacity-80">Random Generators</a>
-            <a href="#testimonials" class="hover:opacity-80">Testimonials</a>
-            <a href="#contact" class="hover:opacity-80">Contact</a>
-        </nav>
-        <div class="flex flex-col sm:gap-2">
-            <p class="text-right">
-                &copy; <span id="year">2023</span> Drystan Furor Arts | All rights
-                reserved
-            </p>
-            <p class="text-right"></p>
-        </div>
-    </section>
-    <p class="p-4 flex flex-col text-right text-xs">
-        Dungeons & Dragons, D&D, their respective logos, and all Wizards titles
-        and characters are property of Wizards of the Coast LLC in the U.S.A.
-        and other countries.
-    </p>
-</footer>
-    <footer class="bg-gray-100  dark:bg-slate-800 dark:text-white">
-        <div class="container mx-auto px-6 pt-10 pb-6">
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold">Links</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold">Legal</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold">Social</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-1/4 text-center md:text-left ">
-                    <h5 class="uppercase mb-6 font-bold">Company</h5>
-                    <ul class="mb-4">
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official Blog</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <footer id="footer" class="bg-zinc-950 text-white text-sm">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>Trimsalon Lobke</h2>
+                KVK 56362404<br>
+                Vestigingsnr 000025922823<br>
+                Email: <a href="mailto:info@trimsalonlobke.nl">info@trimsalonlobke.nl</a><br />
+                Phone: <a href="tel:+331624770098">(+31) 6 505 732 74</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#home" class="hover:opacity-80">Home</a>
+                <a href="#description" class="hover:opacity-80">Over ons</a>
+                <a href="#contact" class="hover:opacity-80">Adres</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">
+                    &copy; <span id="year">2024</span> Arts ICT | All rights reserved
+                </p>
+                <p class="text-right"></p>
             </div>
-        </div>
+        </section>
+        <p class="p-4 flex flex-col text-right text-xs">
+            Sherlock Holmes, published works, their respective logos,
+            and all Arthur Conan Doyle titles and characters are property
+            are now in the public domain of the European Union.
+        </p>
     </footer>
 </body>
 
