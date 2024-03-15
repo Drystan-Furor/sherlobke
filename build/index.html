@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html class="sm:scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>SherLobke</title>
+    <script defer src="dist/main.bundle.js"></script>
+    <link alt="app logo" href="css/style.css" rel="stylesheet"/>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen text-gray-700 bg-white dark:bg-slate-800 dark:text-white"
+      style="font-family: 'Source Sans Pro', sans-serif">
+<!--NAV -->
+<header class="bg-yellow-700 text-white sticky top-0 z-10"
+        style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+            <a href="#home">
+                <span class="font-bold">SherLobke</span>
+            </a>
+        </h1>
+        <div>
+            <button class="text-3xl md:hidden cursor-pointer relative w-8 h-8" id="hamburger-button">
+                <!--&#9776-->
+                <div
+                        class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                </div>
+            </button>
+            <nav aria-label="main" class="hidden md:block space-x-8 text-xl">
+                <a class="hover:opacity-90" href="#service"> Services </a>
+                <a class="hover:opacity-90" href="#pricing">Prijzen</a>
+                <a class="hover:opacity-90" href="#description"> Over ons </a>
+                <a class="hover:opacity-90" href="#about"> Lobke </a>
+                <a class="hover:opacity-90" href="#contact"> Contact </a>
+            </nav>
+        </div>
+    </section>
+    <section
+            class="absolute top-68 bg-zinc-950 dark:bg-zinc-950 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+            id="mobile-menu">
+        <!--<button class="text-8xl self-end px-6">-->
+        <!-- &times;-->
+        <!--</button>-->
+        <nav aria-label="mobile" class="flex flex-col min-h-screen items-center py-8">
+            <a class="w-full text-center py-6 hover:opacity-80" href="#home">Home</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#service">Services</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#pricing">Prijzen</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#description">Over Ons</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#about">Lobke</a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#contact"> Contact </a>
+            <a class="w-full text-center py-6 hover:opacity-80" href="#footer">Legal</a>
+        </nav>
+    </section>
+</header>
+<!--Hero-->
+<section id="home" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <div class="container mx-auto px-6 text-center py-20">
+        <!-- LOGO -->
+        <div>
+            <section class="max-w-4xl mx-auto flex justify-between items-center mb-3">
+                <img alt="sherlobke logo" class="sm:w-1/3 md:w-1/2  mx-auto rounded-full" src="img/logo.webp"/>
+            </section>
+        </div>
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Welkom bij SherLobke <br/> Hondenschool voor: Detectie & Speuren!
+        </h2>
+        <h3 class="my-4 text-2xl text-white">
+            Duik in de fascinerende wereld van speuren en detectie met SherLobke, dé hondenschool waar passie voor
+            avontuur en de liefde voor honden samenkomen.
+        </h3>
+        <a href="#service">
+            <button class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                Speuren & Detectie
+            </button>
+        </a>
+    </div>
+</section>
+<!-- Services -->
+<section class="container mx-auto px-6 py-20 " id="service">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50 py-10 pt-10">
+        Services:
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Speuren & Detectie
+            </h2>
+            <h4 class="text-2xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Samenwerken met je hond
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8 mr-4">
+                Welkom bij SherLobke, het unieke kruispunt waar passie voor honden en de kunst van het speuren
+                samenkomen. Geïnspireerd door de scherpzinnigheid van Sherlock Holmes, bieden wij een verrijkende
+                ervaring voor zowel hond als eigenaar. In onze wereld wordt elke geur een avontuur en elk spoor een
+                mysterie om te ontrafelen. Ons doel? De band tussen jou en je hond versterken door de wonderen van
+                detectie en speurwerk.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                SherLobke onderscheidt zich als een unieke hondenschool met een gespecialiseerde focus op
+                <a href="#detectie">
+                    <span class="text-yellow-600 dark:text-yellow-600 font-bold uppercase">detectie</span>
+                </a>
+                en
+                <a href="#speuren">
+                    <span class="text-yellow-600 dark:text-yellow-600 font-bold uppercase">speuren</span>
+                </a>
+                , geleid door de passie en expertise van Lobke, een kynologisch instructeur met een hart voor
+                honden en een bijzondere interesse in hun olfactorische capaciteiten. Bij SherLobke wordt het
+                natuurlijke instinct van honden niet alleen erkend maar ook verfijnd, door middel van een reeks
+                doordachte en uitdagende cursussen die zowel honden als hun eigenaren aanspreken.
+            </p>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img alt="Hero" class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                 src="img/dogsurvival.jpg"/>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20" id="detectie">
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img alt="Hero" class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                 src="img/detectie_emy_bassisschool.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2">
+            <h2 class="text-3xl text-yellow-600 dark:text-yellow-600 font-bold mb-3 uppercase">
+                Detectie
+            </h2>
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Passie en plezier
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Bij SherLobke geloven we dat elke hond de potentie heeft om een speurneus te zijn. Of je nu een
+                doorgewinterde detective duo bent of nieuwsgierig naar deze opwindende wereld, onze programma's zijn
+                ontworpen om iedereen welkom te heten. Met een mix van deskundige begeleiding, praktische oefeningen
+                en een snufje plezier, ontsluiten we samen de verborgen talenten van je hond.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Duik in de wereld van detectie waarbij jouw hond zijn natuurlijke neuskracht inzet! Detectie is de
+                perfecte solo-activiteit voor elke hond, ongeacht leeftijd of temperament. Van speelse pups tot wijze
+                seniors, elke hond kan leren speuren naar een specifieke geurbron, wat het spannend maakt voor zowel
+                hond als baasje. En voor de verlegen viervoeters? Geen stress, want andere honden zijn geen deel van
+                deze persoonlijke zoektocht.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                We starten bij de basics en werken toe naar meer complexe uitdagingen, inclusief het negeren van
+                afleidingsgeuren. Jouw hond zal leren om de aangewezen geur te identificeren en te verwijzen, waarbij
+                het avontuur zich zowel binnen als buiten afspeelt. Onze detectielocatie bevindt zich op een boerderij,
+                vol met spannende zoekplekken.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Plezier en positieve ervaringen staan centraal in onze detectielessen, zonder enige druk. De lessen zijn
+                privé en volledig afgestemd op jou en je hond, met een half uur vol intensief en bevredigend zoekwerk.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Ben je klaar om samen met je hond te speuren naar succes? Boek nu jullie halfuur detectieplezier bij
+                Sherlobke en zet de eerste stap in een geurig avontuur!
+            </p>
+            <a href="#pricing">
+                <button class="Premium text-white dark:text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                    Bekijk de prijzen
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20 mt-20" id="speuren">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-3xl text-yellow-600 dark:text-yellow-600 font-bold mb-3 uppercase">
+                Speuren
+            </h2>
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Avontuur
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Ons avontuurlijke pad is bezaaid met olijfgroene mysteries en Sherlock-bruine ontdekkingen, klaar om
+                door jullie samen verkend te worden. Dus, waar wacht je nog op? Trek je speurschoenen aan, leid je
+                hond naar nieuwe hoogtes van begrip en communicatie, en duik samen in de opwindende wereld van
+                hondendetector- en speurwerk.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Laat je hond zijn innerlijke speurhond ontketenen met onze speurlessen, waar hij met zijn fantastische
+                neus een pad van mensengeuren volgt! Onderweg kunnen er zelfs voorwerpen liggen die hij leert aan te
+                duiden. Of het spoor nu door gras slingert, in het bos kronkelt of over verharde paden loopt, onze
+                privélessen worden op maat gemaakt voor jouw hond's unieke vaardigheden en leerstijl. Weer of geen weer,
+                jong of al wat grijzer achter de oren – elke hond kan de kunst van het speuren meester worden, gedreven
+                door zijn natuurlijke drang en uitmuntende reukvermogen.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                We zijn gevestigd in de prachtige omgeving van Achterveld, Leusden, Barneveld en Amersfoort, waar we ons
+                overgeven aan het plezier van speuren. Omdat honden intens genieten van deze geurige zoektocht, duren
+                onze speurlessen een vol uur.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Klaar om samen met je hond een speurneus avontuur aan te gaan? Boek nu jullie uur vol ontdekkingen en
+                word het speurteam waar iedereen jaloers op zal zijn!
+            </p>
+
+            <a href="#pricing">
+                <button class="Premium text-white dark:text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                    Bekijk de prijzen
+                </button>
+            </a>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4 p-4">
+            <img alt="detectie emy stadion" class="rounded-lg border-2 border-lime-700 sm:max-w-full sm:h-auto shadow-2xl"
+                 src="img/detectie_emy_stadion.jpg"/>
+        </div>
+    </div>
+</section>
+<!--pricing-->
+<section class="bg-gray-100 mb-20 dark:bg-slate-800 dark:text-white" id="pricing">
+    <div class="container mx-auto px-6 py-20 border border-2 rounded-lg border-lime-800 dark:border-lime-800">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+            Prijzen
+        </h2>
+        <div class="flex flex-wrap ">
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <a href="#detectie">
+                    <div class="Basic bg-white rounded shadow-2xl border-8 border-lime-700 dark:border-lime-700">
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Dog Emy on detection in school" class="object-cover h-full w-full rounded-full"
+                                 src="img/detectie_emy_bassisschool.jpg"/>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h1 class="text-3xl text-center text-slate-50 my-4 uppercase">
+                                Detectie
+                            </h1>
+                        </div>
+                        <p class="text-gray-100 text-base px-6 mb-5 text-center">
+                            Ontdek de geur-superheld in jouw hond met detectielessen!
+                        </p>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 dark:text-slate-50 my-4">
+                                Proefles €25,-
+                            </h2>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 dark:text-slate-50 my-4">
+                                Privéles €30,-
+                            </h2>
+                        </div>
+                        <p class="text-gray-900 text-xs md:text-sm px-6">
+                            Prijs per sessie
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <a href="#speuren">
+                    <div class="Regular shadow-2xl bg-white rounded border-8 border-yellow-600 dark:border-yellow-600"
+                         >
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Dog Emy on detection in school" class="object-cover h-full w-full rounded-full"
+                                 src="img/detectie_libby_bij_uniblock_2.png"/>
+
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h1 class="text-3xl text-center text-slate-50 my-4 uppercase">
+                                Speuren
+                            </h1>
+                        </div>
+                        <p class="text-gray-100 text-base px-6 mb-5 text-center">
+                            Laat je hond zijn innerlijke speurder ontdekken.
+                        </p>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 dark:text-slate-50 my-4">
+                                Proefles (1 uur)
+                            </h2>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 dark:text-slate-50 my-4">
+                                €45,-
+                            </h2>
+                        </div>
+                        <p class="text-gray-900 text-xs md:text-sm px-6">
+                            Prijs per uur
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <a href="#speuren">
+                    <div class="Premium bg-white rounded shadow-2xl border-8 border-yellow-600 dark:border-yellow-600 hover:opacity-90 ">
+                        <!--                         style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)"-->
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Dog Emy on detection in school" class="object-cover h-full w-full rounded-full"
+                                 src="img/detectie_emy_stadion.jpg"/>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h1 class="text-3xl text-center text-zinc-700 my-4 uppercase">
+                                Speuren
+                            </h1>
+                        </div>
+                        <button class="Btn mx-auto mb-2">
+                            <svg viewBox="0 0 576 512" height="1em" class="logoIcon"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg>
+                            GO PREMIUM
+                        </button>
+                        <p class="text-gray-700 text-base px-6 mb-5 text-center">
+                            Een uur vol neuswerk en avontuur met onze speurlessen!
+                        </p>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 my-4">
+                                Privéles (1 uur)
+                            </h2>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <h2 class="text-2xl text-center text-gray-800 my-4">
+                                €60,-
+                            </h2>
+                        </div>
+                        <p class="text-gray-900 text-xs md:text-sm px-6">
+                            Prijs per uur
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--description-->
+<section id="description" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <div class="container mx-auto px-6 text-center py-20">
+        <!-- LOGO -->
+        <div>
+            <section class="max-w-4xl mx-auto flex justify-between items-center mb-3">
+                <img alt="sherlobke logo" class="sm:w-1/2 mx-auto rounded-full" src="img/logo.webp"/>
+            </section>
+        </div>
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Welkom bij SherLobke <br/> Uw One-Stop Speur & Detectie School!
+        </h2>
+        <h3 class="my-4 text-2xl text-white">
+            Ontdek de wereld door de neus van je trouwe viervoeter.
+        </h3>
+        <p class="mb-3  text-white">
+            SherLobke is een hondenschool met Focus op Neuswerk: Onze trainingen zijn specifiek ontworpen om de
+            vaardigheden van jouw
+            hond in speuren en detectie te verbeteren. Of het nu gaat om het opsporen van specifieke geuren of het
+            volgen van een spoor, als kynologisch instructeur helpt SherLobke in het ontsluiten van het potentieel van
+            jouw hond.
+        </p>
+        <a href="#location">
+            <button class="bg-white text-black font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                Bezoek ons
+            </button>
+        </a>
+    </div>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2 p-4">
+            <img alt="Dog enjoys view in Switzerland" class="rounded-full sm:max-w-full sm:h-auto"
+                 src="img/swiss_emy_enjoys_view.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2 px-8">
+            <h4 class="text-3xl text-slate-50 dark:text-slate-50 font-bold mb-3">
+                Ontdekkingsreis
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                SherLobke staat symbool voor avontuur, kennisdeling en gemeenschapszin. Het is een weerspiegeling
+                van Lobke's overtuiging dat door samenwerking en wederzijds respect tussen hond en eigenaar, ongekende
+                mogelijkheden ontdekt kunnen worden. Met haar hondenschool nodigt Lobke anderen uit om deel te nemen aan
+                deze ontdekkingsreis, om samen met hun viervoetige vrienden de wereld van speur- en detectiewerk te
+                verkennen, en om hun banden te versterken door gedeelde ervaringen en avonturen. SherLobke is niet
+                alleen een hondenschool, maar een toegangspoort tot een wereld vol mogelijkheden, geleid door Lobke's
+                expertise, passie en de onvoorwaardelijke liefde voor honden.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ABOUT  -->
+<section class="container mx-auto px-6 py-20" id="about">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-slate-50">
+        Wie is Lobke:
+    </h2>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Liefde voor dieren
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Hey, ik ben Lobke Bakker, door en door een dierenvriend. Al van kleins af aan waren dieren mijn beste
+                vrienden, maar de echte gamechanger kwam toen ik 15 was: onze allereerste hond. Na mijn
+                middelbareschooltijd was het een no-brainer om me te storten op management dierverzorging aan het
+                Groenhorst College in Barneveld. Daar heb ik de tijd van mijn leven gehad, en als kers op de taart
+                rondde ik in 2013 mijn opleiding honden trimmen af. Niet lang daarna begon ik mijn eigen trimsalon.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Maar toen… Tijd voor mijn eigen hondje! Ik had mijn zinnen gezet op een Jack Russell Terriër. Via een
+                clubmatch liep ik een fokker tegen het lijf en voilà: even later was er een pupje voor mij. Emy werd
+                mijn hartendief! Natuurlijk ging ik op zoek naar een hondenschool. Na de puppy- en pubercursus werd het
+                tijd voor iets nieuws. Een workshop detectie opende onze ogen: dit was het helemaal! Dat zette mij aan
+                het denken...
+            </p>
+        </div>
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2 m-4 shadow-2xl">
+            <img alt="Hero and dog" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto" src="img/hero.jpg"/>
+        </div>
+        <!--image-->
+        <div class="w-full sm:w-1/2 mx-auto p-4">
+            <img alt="Hero and dog" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto" src="img/hero_and_dog.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Kynologische instructeur
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Ik wilde meer leren over hondengedrag, om Emy beter te begrijpen. Dus dook
+                ik de opleiding tot kynologische instructeur in bij Annorlunda in Barneveld. Wat ik daar leerde was zo
+                waardevol, dat het me niet meer losliet. En toen kwam het idee: waarom combineer ik mijn trimsalon niet
+                met een hondenschool, speciaal voor neuswerk?
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Na een paar specialisatieopleidingen was het zover: hondenschool Sherlobke zag het licht. Dus, ben jij
+                klaar om samen met je viervoeter de wondere wereld van speuren en detectie te ontdekken? Kom dan langs
+                bij Sherlobke, waar snuffelen serieus genomen wordt en plezier voorop staat. Laten we samen avonturen
+                beleven met onze honden!
+            </p>
+            <!--stats -->
+            <section id="stats" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)" class="p-6 m-8 rounded-lg">
+                <div class="flex flex-col items-center mx-auto bg-white w-72 h-auto pt-5 pb-7 border border-gray-200 rounded-lg space-y-8 shadow-lg">
+                    <section class="flex flex-col text-center space-y-1">
+                        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+                            Opleidingen
+                        </h2>
+                        <p class="text-slate-500 text-sm">Elk jaar volg ik nascholing op verschillende gebieden gericht op de
+                            hond</p>
+                    </section>
+                    <section class="space-y-2">
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Groenhorst College <br/>Management dierverzorging</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Cursuscentrum Barneveld <br/>Honden trimmen opleiding</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Kynologische instructeur <br/>bij Annorlunda</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Argos detectie handler</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Instructeur speuren <br/>basisopleiding bij NSDB</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <svg
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-5 h-5 text-blue-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        clip-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                            <span class="text-slate-500 text-sm">Tracking and trailing <br/>instructeur level 1 SIFD</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Avontuurlijke en enthousiast
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Maak kennis met Emy, mijn Jack Russell Terriër, de meest avontuurlijke en enthousiaste sidekick die je
+                je kunt voorstellen. Of we nu een nieuwe geur volgen of gewoon lekker actief zijn, Emy is er helemaal
+                klaar voor. We zijn niet alleen dol op het uitdagen van haar speurneus met detectie-avonturen; samen de
+                natuur in voor een flinke wandeling is onze topfavoriet.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Vakantie? Dat is synoniem aan de perfecte getaway waar Emy ook volop van kan genieten. Of het nou gaat
+                om een verfrissende duik of om te ravotten langs de waterkant, we zorgen altijd dat onze bestemming
+                hond-vriendelijk is. En als we niet op het land zijn, vind je ons peddelend over het water op onze sup,
+                genietend van de zon op onze snuit.
+            </p>
+        </div>
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2 m-4 shadow-2xl">
+            <img alt="suppen" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto"
+                 src="img/suppen.jpg"/>
+        </div>
+<!--    </div>-->
+<!--    <div class="flex items-center flex-wrap mb-20">-->
+        <div class="w-full mx-auto sm:w-1/2 m-4 shadow-2xl">
+            <img alt="detectie emy timmerfabriek" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto" src="img/detectie-emy-timmerfabriek.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2 pl-10">
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Expert in hondenspeur- en detectiewerk
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Lobke is een ware pionier op het gebied van hondenspeur- en detectiewerk, wiens pad is geplaveid met
+                passie, toewijding en een diepe liefde voor dieren. Haar reis begon op het Groenhorst College in
+                Barneveld, waar ze haar diploma in dierverzorging behaalde, een fundament dat haar toewijding aan
+                dierwelzijn en haar verlangen om een verschil te maken in de levens van dieren bevestigde. Haar
+                dorst naar kennis en specialisatie leidde haar naar het Cursuscentrum Dierverzorging, ook in
+                Barneveld, waar ze met vlag en wimpel slaagde voor de opleiding honden trimmen.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Of het nu gaat om het opsporen van specifieke geuren of het volgen van een spoor, als kynologisch
+                instructrice is Lobke expert in het ontsluiten van het potentieel van jouw hond.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Met een solide achtergrond in dierverzorging en een ontembare passie voor honden, heeft Lobke zich
+                verder ontwikkeld tot een expert in hondenspeur- en detectiewerk. Haar ervaringen hebben haar
+                geleerd dat elke hond uniek is, met eigen talenten die wachten om ontdekt te worden. Deze
+                ontdekkingen wekten een diepere passie in Lobke op, een verlangen om niet alleen banden te smeden en
+                te versterken tussen honden en hun eigenaren, maar ook om anderen te inspireren en uit te rusten om
+                samen met hun honden aan avonturen te beginnen.
+
+            </p>
+        </div>
+    </div>
+    <div class="flex items-center flex-wrap mb-20">
+        <div class="w-full md:w-1/2">
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Hondenschool
+            </h4>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Gedreven door deze passie en met een rijke ervaring op zak, opent Lobke nu SherLobke, een
+                hondenschool die een schat aan ervaringen biedt voor iedereen die geïnteresseerd is in speuren en
+                detectie met honden. SherLobke is meer dan zomaar een hondenschool; het is een uitdrukking van Lobke's
+                levenswerk, een plek waar gelijkgestemde individuen alles kunnen vinden wat ze nodig hebben om de
+                speurvaardigheden van hun honden te ontwikkelen en te verfijnen.
+            </p>
+        </div>
+        <div class="w-full mx-auto sm:w-1/2 m-4 shadow-2xl">
+            <img alt="libby on detection" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto"
+                 src="img/detectie_libby_bij_uniblock.jpg"/>
+        </div>
+<!--    </div>-->
+<!--    <div class="flex items-center flex-wrap mb-20">-->
+        <!--image-->
+        <div class="w-full mx-auto sm:w-1/2  p-4">
+            <img alt="Hero and dog" class="rounded-lg border-2 border-yellow-600 sm:max-w-full sm:h-auto" src="img/show.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2">
+            <!-- titel-->
+            <h4 class="text-3xl text-gray-800 dark:text-slate-50 font-bold mb-3">
+                Kom je mee doen?
+            </h4>
+            <!--text-->
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Maar wacht, er is meer! We dagen onszelf regelmatig uit met een dogsurvival parcours en een energieke
+                cani-trail. En ja, we hebben zelfs de showring verkend met ringtrainingen en hondenshows, maar eerlijk
+                is eerlijk, niets verslaat de eenvoudige vreugde van de natuur.
+            </p>
+            <p class="text-gray-600 dark:text-slate-300 mb-8">
+                Na zo'n heerlijke dag, kruipen we het liefst op de bank met een goed boek of een film – Emy lekker
+                snurkend aan mijn zijde. Wil je zien hoe we dit allemaal doen en misschien zelfs meedoen? Sherlobke is
+                waar je moet zijn, waar elk avontuur met een kwispel begint en eindigt met een tevreden zucht.
+            </p>
+        </div>
+    </div>
+</section>
+<!--LOCATION-->
+<section id="location" style="background: linear-gradient(90deg, #c08955 0%, #808000 100%)">
+    <div class="container mx-auto px-6 text-center py-20 min-h-screen">
+        <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            Bezoek ons vandaag nog!
+        </h2>
+        <h3 class="my-4 text-2xl text-white">
+            Laat geen spoor onontdekt, en begin bij SherLobke aan een reis vol mysterie, verbinding en ontdekking.
+        </h3>
+        <!-- contact -->
+        <div class="container mx-auto px-6 py-20" id="contact">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+                Contact
+            </h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <h4 class="text-black text-center">Afspraak maken:</h4>
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            Telefonisch: <a href="tel:+31650573274">(+31) 6 505 732 74</a><br>
+                            Sms of Whats app voor een snelle reactie.<br>
+                            E-mail: <a href="mailto:info@sherlobke.nl">info@sherlobke.nl</a>
+                        </p>
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Na 18.00 uur goed bereikbaar.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <div class="text-center">
+                            <h4 class="text-black">Openingstijden</h4>
+                            <table class="mx-auto text-gray-800 text-base mb-5">
+                                <tbody>
+                                <tr>
+                                    <td class="px-6 py-2">MA:</td>
+                                    <td class="px-6 py-2">9:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">DI:</td>
+                                    <td class="px-6 py-2">9:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">WO:</td>
+                                    <td class="px-6 py-2">9:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">DO:</td>
+                                    <td class="px-6 py-2">9:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">VR:</td>
+                                    <td class="px-6 py-2">9:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">ZA:</td>
+                                    <td class="px-6 py-2">Gesloten</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2">ZO:</td>
+                                    <td class="px-6 py-2">Gesloten</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Afwijkende openingstijden op feestdagen, neem contact op voor meer informatie.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-2 mb-4">
+                    <div class="bg-white rounded shadow py-2">
+                        <iframe allowfullscreen=""
+                                class="mx-auto w-5/6 h-auto mb-2"
+                                loading="eager" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.6648991726374!2d5.501343877892262!3d52.06762507194632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64e2b5ada5653%3A0x36427219e1e8271f!2sZorgboerderij%20De%20Groote%20Fliert%20-%20Familie%20van%20de%20Lagemaat!5e0!3m2!1snl!2snl!4v1710272454869!5m2!1snl!2snl">
+                        </iframe>
+                        <p class="text-gray-800 text-base px-6 mb-5">
+                            Gelegen in Buitengebied Achterveld ligt boerderij de Fliert aan de Jan van Arkelweg.
+                            Gesitueerd op loopafstand van het centrum van Achterveld. De dichtstbijzijnde uitvalsweg is
+                            op slechts 5 minuten rijden.
+                        <p class="text-gray-500 text-xs md:text-sm px-6">
+                            Er is voldoende parkeergelegenheid.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto bg-white text-black font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider flex flex-col items-center justify-between lg:w-1/2">
+                    <div class="text-center">
+                        Boerderij de Fliert<br>
+                        Jan van Arkelweg 50<br>
+                        3792NM Achterveld
+                    </div>
+                    <button class="bg-slate-600 dark:bg-slate-600 text-white ml-3 px-2 py-1 rounded-lg hover:bg-slate-900 hover:text-white active:bg-yellow-500 flex items-center"
+                            id="copyButton"
+                            title="copy address">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round"
+                             stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect>
+                            <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                        </svg>
+                        <span class="copy-all__text ml-2">Copy</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials -->
+<section class="bg-gray-100  dark:bg-slate-800 dark:text-white" id="testimonials">
+    <div class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-slate-50 mb-8">
+            Testimonials
+        </h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Onze ervaring met SherLobke was simpelweg onvergetelijk. Mijn hond, Max, en ik hebben samen
+                        geleerd hoe we een echt team kunnen vormen. Elke sessie was een avontuur op zich!
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">
+                        Jeroen & Max
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Ik wist niet dat mijn kleine terriër, Daisy, zulke verbazingwekkende speurvaardigheden had
+                        tot we de cursussen bij SherLobke volgden. Dank je, Lobke, voor het openen van deze nieuwe
+                        wereld voor ons!
+                    </p>
+                    <p class="text-gray-500 text-xs md:text-sm px-6">
+                        Emma & Daisy
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-2 mb-4">
+                <div class="bg-white rounded shadow py-2">
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        SherLobke heeft ons geholpen een sterke band op te bouwen en elkaar op een heel nieuw niveau
+                        te begrijpen. De technieken en het plezier dat we hebben beleefd tijdens de speurlessen zijn
+                        onbetaalbaar.
+                    <p class="text-gray-500 text-xs md:text-sm px-6">
+                        Lucas & Bella
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Footer-->
+<footer class="bg-zinc-950 text-white text-sm" id="footer">
+    <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+        <address>
+            <h2>Hondenschool SherLobke</h2>
+            KVK TODO<br>
+            BTW-id TODO<br>
+            Email: <a href="mailto:iinfo@sherlobke.nl">info@sherlobke.nl</a><br/>
+            Phone: <a href="tel:+331624770098">(+31) 6 505 732 74</a>
+        </address>
+        <nav aria-label="footer" class="hidden md:flex flex-col gap-2">
+            <a class="hover:opacity-80" href="#home">Home</a>
+            <a class="hover:opacity-80" href="#service">Services</a>
+            <a class="hover:opacity-80" href="#pricing">Prijzen</a>
+            <a class="hover:opacity-80" href="#description">Over ons</a>
+            <a class="hover:opacity-80" href="#about">Lobke</a>
+            <a class="hover:opacity-80" href="#contact">Contact</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+            <a href="https://arts-ict.onrender.com">
+                <p class="text-right">
+                    &copy; <span id="year">2024</span> Arts ICT | All rights reserved
+                </p>
+            </a>
+        </div>
+    </section>
+    <p class="max-w-4xl p-4 flex flex-col text-right text-xs  mx-auto">
+        Sherlock Holmes, published works, their respective logos,
+        and all Arthur Conan Doyle titles and characters and property
+        are now in the public domain of the European Union.
+    </p>
+</footer>
+</body>
+
+</html>
