@@ -28,7 +28,7 @@ sherlobke.main.copyButton = function (copyButton) {
 }
 
 sherlobke.main.copyToClipboard = function () {
-    let string = "Arnhemseweg 34\n3832GM\nLeusden";
+    let string = "Jan van Arkelweg 50\n3792NM\nAchterveld";
     navigator.clipboard.writeText(string).then(function () {
         console.log('copied to clipboard!');
     }).catch(function (err) {
